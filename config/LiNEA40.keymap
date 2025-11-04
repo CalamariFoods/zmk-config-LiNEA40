@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,
+            //スクロール方向を逆転,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -70,6 +70,11 @@
         bt {
             bindings = <&mo 4>;
             key-positions = <34 35>;
+        };
+
+        scroll {
+            bindings = <&mo 5>;
+            key-positions = <27 28>;
         };
     };
 
@@ -114,10 +119,10 @@
 
         layer_1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5                              &kp NUMBER_6   &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0
-&kp EXCL      &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                               &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                     &kp GRAVE      &kp EQUAL         &kp COMMA         &kp PERIOD         &mt LEFT_SHIFT SLASH
-&trans        &trans         &trans        &trans                &trans                 &trans    &kp DEL  &kp BACKSPACE                    &trans            &kp INT3           &kp INT1
+&kp NUMBER_1          &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5                              &kp NUMBER_6   &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0
+&kp EXCL              &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                               &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&mt LEFT_SHIFT CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                     &kp GRAVE      &kp EQUAL         &kp COMMA         &kp PERIOD         &mt LEFT_SHIFT SLASH
+&trans                &trans         &trans        &trans                &trans                 &trans    &kp DEL  &kp BACKSPACE                    &trans            &kp INT3           &kp INT1
             >;
         };
 
